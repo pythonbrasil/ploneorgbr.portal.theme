@@ -1,0 +1,32 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="ploneorgbr.portal.theme">
+
+    <interface
+        interface=".interfaces.IThemeSpecific"
+        type="zope.publisher.interfaces.browser.IBrowserSkinType"
+        name="ploneorgbr_portal_theme"
+        />
+    <!-- Viewlets registration -->
+    <browser:viewlet
+             name="ploneorgbr.portal.theme.footer"
+             manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
+             template="templates/footer.pt"
+             layer=".interfaces.IThemeSpecific"
+             permission="zope2.View"
+     />
+
+    <browser:resourceDirectory
+        name="ploneorgbr.portal.theme.images"
+        directory="images"
+        layer=".interfaces.IThemeSpecific"
+        />
+
+    <browser:resourceDirectory
+        name="ploneorgbr.portal.theme.stylesheets"
+        directory="stylesheets"
+        layer=".interfaces.IThemeSpecific"
+        />
+
+</configure>

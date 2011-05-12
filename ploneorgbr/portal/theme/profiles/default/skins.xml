@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<object name="portal_skins" allow_any="False" cookie_persistence="False"
+   default_skin="ploneorgbr_portal_theme">
+ <object name="ploneorgbr_portal_theme_images"
+    meta_type="Filesystem Directory View"
+    directory="ploneorgbr.portal.theme:skins/images"/>
+ <object name="ploneorgbr_portal_theme_templates"
+    meta_type="Filesystem Directory View"
+    directory="ploneorgbr.portal.theme:skins/templates"/>
+ <object name="ploneorgbr_portal_theme_styles"
+    meta_type="Filesystem Directory View"
+    directory="ploneorgbr.portal.theme:skins/styles"/>
+ <object name="ploneorgbr_portal_theme_javascripts"
+    meta_type="Filesystem Directory View"
+    directory="ploneorgbr.portal.theme:skins/javascripts"/>
+
+ <skin-path name="ploneorgbr_portal_theme" 
+            based-on="Plone Default">
+  <layer name="ploneorgbr_portal_theme_images"
+     insert-after="custom"/>
+  <layer name="ploneorgbr_portal_theme_templates"
+     insert-after="ploneorgbr_portal_theme_images"/>
+  <layer name="ploneorgbr_portal_theme_styles"
+     insert-after="ploneorgbr_portal_theme_templates"/>
+  <layer name="ploneorgbr_portal_theme_javascripts"
+     insert-after="ploneorgbr_portal_theme_styles"/>
+ </skin-path>
+
+</object>
