@@ -7,4 +7,13 @@
     authenticated="False"
     />
 
+ <!--
+ <stylesheet
+    id="++theme++ploneorgbr.portal.theme/styles/main.css"
+    expression="request/HTTP_X_THEME_ENABLED | nothing"
+    rendering="link"
+    applyPrefix="True"
+    />
+ -->
+
 </object>
