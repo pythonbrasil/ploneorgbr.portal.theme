@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<layers>
+ <layer
+    name="ploneorgbr.portal.theme"
+    interface="ploneorgbr.portal.theme.browser.interfaces.IThemeSpecific"
+    />
+</layers>
