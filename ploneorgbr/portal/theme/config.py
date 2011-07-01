@@ -2,6 +2,5 @@
 # File: config.py
 
 
-__author__ = """Simples Consultoria <products@simplesconsultoria.com.br>"""
+__author__ = """Comunidade PloneOrgBr <contato@plone.org.br>"""
 __docformat__ = 'plaintext'
-

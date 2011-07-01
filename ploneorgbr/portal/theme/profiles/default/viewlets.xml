@@ -7,6 +7,7 @@
     based-on="Sunburst Theme">
   <viewlet name="plone.personal_bar" insert-before="*" />
  </order>
+
  <order
     manager="plone.portalfooter"
     skinname="ploneorgbr_portal_theme"
@@ -17,6 +18,7 @@
  <hidden manager="plone.portalheader" skinname="ploneorgbr_portal_theme">
   <viewlet name="plone.site_actions" />
  </hidden>
+
  <hidden manager="plone.portalfooter" skinname="ploneorgbr_portal_theme">
   <viewlet name="plone.footer" />
   <viewlet name="plone.colophon" />
