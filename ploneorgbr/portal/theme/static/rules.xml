@@ -5,7 +5,7 @@
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
   <!-- The default theme, used for standard Plone web pages -->
-  <theme href="theme.html" css:if-content="#visual-portal-wrapper" />
+  <theme href="index.html" css:if-content="#visual-portal-wrapper" />
 
   <!-- Rules applying to a standard Plone web page -->
   <rules css:if-content="#visual-portal-wrapper">
