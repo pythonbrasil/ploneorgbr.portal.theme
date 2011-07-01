@@ -21,9 +21,9 @@
 
   <genericsetup:registerProfile
       name="uninstall"
-      title="uninstall:ploneorgbr.portal.theme"
+      title="Desinstala Tema de PloneOrgBr"
       directory="profiles/uninstall"
-      description="Remove tema visual Plone.org.br"
+      description="Desinstala pacote ploneorgbr.portal.theme"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
