@@ -1,5 +1,8 @@
-<div id="portal-footer" metal:define-macro="portal_footer" i18n:domain="plone" tal:define="portal_url context/portal_url;">
-
+<div id="portal-footer"
+    metal:define-macro="portal_footer"
+    tal:define="portal_url context/portal_url"
+    i18n:domain="plone">
+  <div class="cell width-full position-0">
     <p>&copy;Copyright <span tal:omit-tag="" tal:define="now modules/DateTime/DateTime" tal:content="now/year" /> - ploneorgbr.portal.theme</p>
-
+  </div>
 </div>
