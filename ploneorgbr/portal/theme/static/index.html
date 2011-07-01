@@ -1,38 +1,32 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head>
-	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-	<title>Plone CMS: Gerenciador de Conteúdo de Código Aberto</title>
-	<link rel="alternate" type="application/rss+xml" href="http://feeds.plone.org/plonenews" title="Plone News" /> 
-	<link rel="alternate" type="application/rss+xml" href="http://feeds.plone.org/plonereleases" title="Plone Releases" /> 
-	<link rel="alternate" type="application/rss+xml" href="http://feeds.plone.org/ploneevents" title="Upcoming Plone Events" /> 
-	<link rel="alternate" type="application/rss+xml" href="http://feeds.plone.org/ploneaddons" title="Latest Plone &amp; Add-on Releases" /> 
-	<link rel="alternate" type="application/rss+xml" href="http://feeds.plone.org/plonetraining" title="Upcoming Plone Training" /> 
-	<link rel="alternate" type="application/rss+xml" href="http://feeds.plone.org/ploneblogs" title="Plone Blogs" /> 
-	<link rel="alternate" type="application/rss+xml" href="http://feeds.plone.org/plone-security" title="Plone Security Advisories" /> 
-	<link rel="stylesheet" href="css/plone.css" type="text/css" media="screen" />
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  <title>Plone.org.br</title>
+  <link rel="stylesheet" href="css/plone.css" type="text/css" media="screen" />
 </head>
 <body>
 <div id="bgrep"></div>
 <div id="outer-wrapper">
-	<div id="inner-wrapper">
-	<div id="nav">
+  <div id="inner-wrapper">
+  <div id="nav">
     <a href="http://plone.org" accesskey="1" title="Home" id="portal-logo">
-    	<img width="215" height="56" title="" alt="" src="http://plone.org/logo.png">
+      <img width="215" height="56" title="" alt="" src="http://plone.org/logo.png">
     </a>
-	<form id="search" name="searchform" action="http://plone.org/search"> 
-		<input type="text" value="Procure nesse site..." id="search-site" name="SearchableText" title="Search this site&hellip;" accesskey="4" class="inputLabel" size="15" /> 
-	</form>
-	<div id="nav-bar">
-    	<div id="user">
-        	<a href="/login" id="login-link">Log in</a>
+  <div id="portal-searchbox">
+    <form id="search" name="" action="">
+      <input type="text" value="Procure nesse site..." id="search-site" name="SearchableText" title="Search this site&hellip;" accesskey="4" class="inputLabel" size="15" />
+    </form>
+  </div>
+  <div id="nav-bar">
+      <div id="user">
+          <a href="/login" id="login-link">Log in</a>
             <a href="/@@personal-preferences" id="user-id"><span id="username"></span></a>
             <div id="login-popup">
-            	<span class="loginText">Login to Plone.org</span>
+              <span class="loginText">Login to Plone.org</span>
                 <form method="post" action="https://plone.org/login_form" id="login-slide-form">
-                	<div class="form">
+                  <div class="form">
                         <input type="hidden" name="came_from" value="" id="came-from-input">
                         <input type="hidden" value="1" name="form.submitted">
                         <label for="__ac_name">username</label>
@@ -47,26 +41,26 @@
              </div>
         </div>
         <ul class="navigation" id="main-nav">
-        	<li class="selected" id="portaltab-index_html">
-            	<a title="" href="http://plone.org">Home</a>
+          <li class="selected" id="portaltab-index_html">
+              <a title="" href="http://plone.org">Home</a>
             </li>
             <li class="plain" id="portaltab-products">
-            	<a title="Plone releases and available add-on products for Plone. Make sure you have Plone installed before downloading the add-ons &mdash; and make sure you are using add-ons that have been certified for use with your particular version." href="http://plone.org/products">Download &amp; Extend</a>
+              <a title="Plone releases and available add-on products for Plone. Make sure you have Plone installed before downloading the add-ons &mdash; and make sure you are using add-ons that have been certified for use with your particular version." href="http://plone.org/products">Download &amp; Extend</a>
             </li>
             <li class="plain" id="portaltab-documentation">
-            	<a title="The primary source for Plone documentation." href="http://plone.org/documentation">Documentation</a>
+              <a title="The primary source for Plone documentation." href="http://plone.org/documentation">Documentation</a>
             </li>
             <li class="plain" id="portaltab-contribute">
-            	<a title="Contains all developer-related material." href="http://plone.org/contribute">Get Involved</a>
+              <a title="Contains all developer-related material." href="http://plone.org/contribute">Get Involved</a>
             </li>
             <li class="plain" id="portaltab-foundation">
-            	<a title="The Plone Foundation exists to further the development, marketing, and legal affairs of Plone and the Plone community." href="http://plone.org/foundation">Plone Foundation</a>
+              <a title="The Plone Foundation exists to further the development, marketing, and legal affairs of Plone and the Plone community." href="http://plone.org/foundation">Plone Foundation</a>
             </li>
             <li class="plain" id="portaltab-support">
-            	<a title="Support and contact details for the Plone project." href="http://plone.org/support">Support</a>
+              <a title="Support and contact details for the Plone project." href="http://plone.org/support">Support</a>
             </li>
             <li class="plain" id="portaltab-providers">
-            	<a title="" href="http://plone.org/providers">Providers</a>
+              <a title="" href="http://plone.org/providers">Providers</a>
             </li>
         </ul>
     </div>
@@ -74,29 +68,29 @@
 </div>
 
 <div id="edit-bar">
-	<div id="action-menu"></div>
-	<div id="edit-menu"></div>
+  <div id="action-menu"></div>
+  <div id="edit-menu"></div>
 </div>
 
 <div id="content-wrapper">
-	<div class="grid-row">
-		<div class="grid-cell position-leftmost width-two-thirds">
-			<div id="region-content">
-				<!-- Content goes here -->
-			</div>
-		</div> <!-- End cell -->
-		<div class="grid-cell position-two-thirds width-third">
-			<div id="sidebar">
-			</div>
-		</div>
-	</div> <!-- End row -->
+  <div class="grid-row">
+    <div class="grid-cell position-leftmost width-two-thirds">
+      <div id="region-content">
+        <!-- Content goes here -->
+      </div>
+    </div> <!-- End cell -->
+    <div class="grid-cell position-two-thirds width-third">
+      <div id="sidebar">
+      </div>
+    </div>
+  </div> <!-- End row -->
 
-	<div class="grid-row"> 
-		<div class="grid-cell position-leftmost width-full">
-			<div id="footer-portlets">
-			</div>
-		</div>
-	</div> <!-- End footer portlets row -->
+  <div class="grid-row">
+    <div class="grid-cell position-leftmost width-full">
+      <div id="footer-portlets">
+      </div>
+    </div>
+  </div> <!-- End footer portlets row -->
 </div>
 
 <div style="clear:both">&nbsp;</div>
@@ -106,75 +100,75 @@
 </div> <!-- end outer-wrapper -->
 
 <div id="footer-wrapper">
-	<div id="footer-gradient"></div>
-	<div id="footer">
-		<a id="footer-logo" 
-		   href="http://plone.org" 
-		   title="Plone CMS, the open source content management system"></a>
-		<p>The Plone<sup>&reg;</sup> CMS/WCM is &copy; 2000&ndash;2010 the Plone Foundation and friends. Site hosted by <a href="http://www.sixfeetup.com" style="color: white">Six Feet Up</a>.</p>
-		<p>Plone<sup>&reg;</sup> and the Plone logo are registered trademarks of the Plone Foundation. You&#x2019;re looking good today.</p>
-		<div id="sitemap">
-			<!-- <dl>
-				<dt><a href="">Plone for…</a></dt>
-				<dd><a href="">Small/Medium Business </a></dd>
-				<dd><a href="">Enterprise            </a></dd>
-				<dd><a href="">Non-profits           </a></dd>
-				<dd><a href="">Government            </a></dd>
-				<dd><a href="">Education             </a></dd>
-				<dd><a href="">Science               </a></dd>
-				<dd><a href="">Media &amp; Publishing</a></dd>
-			</dl> -->
-			<dl>
-				<dt><a href="/products">Downloads</a></dt>
-				<dd><a href="/download">Get Plone</a></dd>
-				<dd><a href="/products?getCategories=themes">Themes</a></dd>
-				<dd><a href="/products?getCategories=dev">Development tools</a></dd>
-				<dd><a href="/products?getCategories=auth">Authentication</a></dd>
-				<dd><a href="/products">&hellip;and more.</a></dd>
-			</dl>
-			<dl>
-				<dt><a href="/documentation">Documentation</a></dt>
-				<dd><a href="/documentation/faq/">FAQs</a></dd>
-				<dd><a href="/documentation/movies/">Tutorial videos</a></dd>
-				<dd><a href="/documentation/manual">Manuals</a></dd>
-				<dd><a href="/documentation/books">Books</a></dd>
-				<!-- <dd><a href="">Knowledge Base</a></dd> -->
-				<dd><a href="/documentation/error">Error Reference</a></dd>
-				<!-- <dd><a href="">Module documentation</a></dd> -->
-				<dd><a href="http://plone.net/sites">Sites using Plone</a></dd>
-			</dl>
-			<dl>
-				<dt><a href="http://dev.plone.org/plone">Developers</a></dt>
-				<dd><a href="http://dev.plone.org/plone/roadmap">Roadmap</a></dd>
-				<dd><a href="http://dev.plone.org/plone">Report bugs in Plone</a></dd>
-				<dd><a href="http://dev.plone.org/plone.org">Report website issues</a></dd>
-				<dd><a href="http://dev.plone.org/plone/timeline">Latest changes</a></dd>
-				<dd><a href="http://dev.plone.org/plone/browser">Browse source</a></dd>
-				<dd><a href="http://dev.plone.org/plone">Contribute to Plone</a></dd>
-				<dd><a href="http://planet.plone.org">Community blogs</a></dd>
-			</dl>
-			<dl>
-				<dt><a href="/foundation">Plone Foundation</a></dt>
-				<dd><a href="/foundation/foundation-donations">Donate</a></dd>
-				<dd><a href="/foundation/donors">Sponsors</a></dd>
-				<dd><a href="/foundation/meetings/minutes">Meeting minutes</a></dd>
-				<dd><a href="/team/FoundationBoard">Current board</a></dd>
-				<dd><a href="/foundation/members">Foundation members</a></dd>
-				<dd><a href="/foundation/membership">Apply for membership</a></dd>
-				<dd><a href="/foundation#contact">Contact</a></dd>
-			</dl>
-			<dl>
-				<dt><a href="/support">Support</a></dt>
-				<dd><a href="http://plone.net/providers">Commercial services</a></dd>
-				<dd><a href="/support/chat">Chat room</a></dd>
-				<dd><a href="/support/forums">Forums</a></dd>
-				<dd><a href="/support/for">Sector-specific forums</a></dd>
-				<dd><a href="/support/region">Region-specific forums</a></dd>
-				<dd><a href="/support/local-user-groups">Local user groups</a></dd>
-				<dd><a href="/events/training">Training</a></dd>
-			</dl>
-		</div>
-	</div>
+  <div id="footer-gradient"></div>
+  <div id="footer">
+    <a id="footer-logo"
+       href="http://plone.org"
+       title="Plone CMS, the open source content management system"></a>
+    <p>The Plone<sup>&reg;</sup> CMS/WCM is &copy; 2000&ndash;2010 the Plone Foundation and friends. Site hosted by <a href="http://www.sixfeetup.com" style="color: white">Six Feet Up</a>.</p>
+    <p>Plone<sup>&reg;</sup> and the Plone logo are registered trademarks of the Plone Foundation. You&#x2019;re looking good today.</p>
+    <div id="sitemap">
+      <!-- <dl>
+        <dt><a href="">Plone for…</a></dt>
+        <dd><a href="">Small/Medium Business </a></dd>
+        <dd><a href="">Enterprise            </a></dd>
+        <dd><a href="">Non-profits           </a></dd>
+        <dd><a href="">Government            </a></dd>
+        <dd><a href="">Education             </a></dd>
+        <dd><a href="">Science               </a></dd>
+        <dd><a href="">Media &amp; Publishing</a></dd>
+      </dl> -->
+      <dl>
+        <dt><a href="/products">Downloads</a></dt>
+        <dd><a href="/download">Get Plone</a></dd>
+        <dd><a href="/products?getCategories=themes">Themes</a></dd>
+        <dd><a href="/products?getCategories=dev">Development tools</a></dd>
+        <dd><a href="/products?getCategories=auth">Authentication</a></dd>
+        <dd><a href="/products">&hellip;and more.</a></dd>
+      </dl>
+      <dl>
+        <dt><a href="/documentation">Documentation</a></dt>
+        <dd><a href="/documentation/faq/">FAQs</a></dd>
+        <dd><a href="/documentation/movies/">Tutorial videos</a></dd>
+        <dd><a href="/documentation/manual">Manuals</a></dd>
+        <dd><a href="/documentation/books">Books</a></dd>
+        <!-- <dd><a href="">Knowledge Base</a></dd> -->
+        <dd><a href="/documentation/error">Error Reference</a></dd>
+        <!-- <dd><a href="">Module documentation</a></dd> -->
+        <dd><a href="http://plone.net/sites">Sites using Plone</a></dd>
+      </dl>
+      <dl>
+        <dt><a href="http://dev.plone.org/plone">Developers</a></dt>
+        <dd><a href="http://dev.plone.org/plone/roadmap">Roadmap</a></dd>
+        <dd><a href="http://dev.plone.org/plone">Report bugs in Plone</a></dd>
+        <dd><a href="http://dev.plone.org/plone.org">Report website issues</a></dd>
+        <dd><a href="http://dev.plone.org/plone/timeline">Latest changes</a></dd>
+        <dd><a href="http://dev.plone.org/plone/browser">Browse source</a></dd>
+        <dd><a href="http://dev.plone.org/plone">Contribute to Plone</a></dd>
+        <dd><a href="http://planet.plone.org">Community blogs</a></dd>
+      </dl>
+      <dl>
+        <dt><a href="/foundation">Plone Foundation</a></dt>
+        <dd><a href="/foundation/foundation-donations">Donate</a></dd>
+        <dd><a href="/foundation/donors">Sponsors</a></dd>
+        <dd><a href="/foundation/meetings/minutes">Meeting minutes</a></dd>
+        <dd><a href="/team/FoundationBoard">Current board</a></dd>
+        <dd><a href="/foundation/members">Foundation members</a></dd>
+        <dd><a href="/foundation/membership">Apply for membership</a></dd>
+        <dd><a href="/foundation#contact">Contact</a></dd>
+      </dl>
+      <dl>
+        <dt><a href="/support">Support</a></dt>
+        <dd><a href="http://plone.net/providers">Commercial services</a></dd>
+        <dd><a href="/support/chat">Chat room</a></dd>
+        <dd><a href="/support/forums">Forums</a></dd>
+        <dd><a href="/support/for">Sector-specific forums</a></dd>
+        <dd><a href="/support/region">Region-specific forums</a></dd>
+        <dd><a href="/support/local-user-groups">Local user groups</a></dd>
+        <dd><a href="/events/training">Training</a></dd>
+      </dl>
+    </div>
+  </div>
 </div>
 </body>
 </html>

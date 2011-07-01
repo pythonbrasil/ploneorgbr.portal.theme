@@ -2,18 +2,11 @@
 <object name="portal_css" meta_type="Stylesheets Registry">
 
  <stylesheet
-    id="ploneorgbr.portal.theme.css"
-    expression=""
-    authenticated="False"
-    />
-
- <!--
- <stylesheet
-    id="++theme++ploneorgbr.portal.theme/styles/main.css"
+    id="++theme++ploneorgbr.portal.theme/css/plone.css"
     expression="request/HTTP_X_THEME_ENABLED | nothing"
+    authenticated="False"
     rendering="link"
     applyPrefix="True"
     />
- -->
 
 </object>
