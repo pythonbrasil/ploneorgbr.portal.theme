@@ -8,4 +8,10 @@
   </object>
  </object>
 
+ <object name="object" meta_type="CMF Action Category">
+  <object name="carousel" meta_type="CMF Action">
+   <property name="visible">False</property>
+  </object>
+ </object>
+
 </object>
