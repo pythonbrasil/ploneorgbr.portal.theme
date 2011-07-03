@@ -29,15 +29,15 @@
     <merge attributes="class" css:content="body" css:theme="body" />
     <copy attributes="id dir" css:content="body" css:theme="body" />
 
-    <!-- Logo (link target) -->
-    <replace attributes="href" css:content='#portal-logo' css:theme="#logo" />
+    <!-- Logo -->
+    <replace css:content='#portal-logo' css:theme="#portal-logo" />
 
     <!-- Site actions -->
-    <replace css:content="#portal-siteactions li" css:theme-children="#actions" />
+    <!--replace css:content="#portal-siteactions li" css:theme-children="#portal-siteactions li" /-->
 
     <!-- Searchbox -->
-    <copy attributes="*" css:content="#portal-searchbox form" css:theme="#search" />
-    <copy attributes="*" css:content="#searchGadget" css:theme="#search input:nth-child(1)" />
+    <copy attributes="action" css:content="#portal-searchbox form" css:theme="#search" />
+    <copy attributes="name" css:content="#searchGadget" css:theme="#search input:nth-child(1)" />
 
     <!-- Global navigation -->
     <replace css:content='#portal-globalnav li' css:theme-children='#main-nav' />
@@ -46,8 +46,8 @@
     <replace css:content-children='#portal-breadcrumbs' css:theme-children='#breadcrumbs' />
 
     <!-- Document Content -->
-    <replace css:content-children="#content" css:theme-children="#document-content" />
-    <before css:content="#edit-bar" css:theme="#document-content" />
+    <replace css:content-children="#content" css:theme-children="#region-content" />
+    <before css:content="#edit-bar" css:theme="#document-content" css:if-content="" />
     <before css:content=".portalMessage" css:theme="#document-content" />
 
     <!-- Columns -->
