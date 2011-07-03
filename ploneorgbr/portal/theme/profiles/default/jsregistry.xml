@@ -1,12 +1,6 @@
 <?xml version="1.0"?>
 <object name="portal_javascripts" meta_type="JavaScripts Registry">
 
- <!--
- <javascript
-    id="something.js"
-    expression=""
-    authenticated="False"
-    />
- -->
+ <javascript id="login.js" expression="" />
 
 </object>
