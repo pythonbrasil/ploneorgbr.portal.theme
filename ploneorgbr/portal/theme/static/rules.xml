@@ -36,19 +36,21 @@
     <!--replace css:content="#portal-siteactions li" css:theme-children="#portal-siteactions li" /-->
 
     <!-- Searchbox -->
-    <copy attributes="action" css:content="#portal-searchbox form" css:theme="#search" />
-    <copy attributes="name" css:content="#searchGadget" css:theme="#search input:nth-child(1)" />
+
+    <replace css:content-children='#portal-searchbox' css:theme-children='#portal-searchbox' />
+    <!--copy attributes="*" css:co  ntent="#portal-searchbox form" css:theme="#search" />
+    <copy attributes="*" css:content="#searchGadget" css:theme="#search-site" /-->
 
     <!-- Global navigation -->
     <replace css:content='#portal-globalnav li' css:theme-children='#main-nav' />
 
     <!-- Breadcrumbs -->
-    <replace css:content-children='#portal-breadcrumbs' css:theme-children='#breadcrumbs' />
+    <!--replace css:content='#portal-breadcrumbs' css:theme='#breadcrumbs' /-->
 
     <!-- Document Content -->
-    <replace css:content-children="#content" css:theme-children="#region-content" />
+    <replace css:content="#content" css:theme="#content" />
     <before css:content="#edit-bar" css:theme="#document-content" css:if-content="" />
-    <before css:content=".portalMessage" css:theme="#document-content" />
+    <before css:content=".portalMessage" css:theme="#content" />
 
     <!-- Columns -->
     <replace css:content-children="#portal-column-one > *" css:theme-children="#column-one" />

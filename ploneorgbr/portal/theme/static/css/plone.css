@@ -153,7 +153,7 @@ body{
 }
 #nav {
     font-family: "Helvetica Neue",Arial,FreeSans,sans-serif;
-    margin: 0 auto;
+    margin: 0 auto 1em;
     width: 910px;
 }
 #main-nav {
@@ -208,19 +208,20 @@ ul.navigation li a:hover {
 ul.navigation li.selected a, ul.navigation li.active a {
     color: #75AD0A;
 }
-#search {
+#portal-searchbox {
     float: right;
     margin-top: 27px;
     position: relative;
 }
-#search-site {
-    background:url(../images/bg/search.png) no-repeat scroll 0 0 transparent;
+#portal-searchbox .searchField {
+    background: url(../images/bg/search.png) no-repeat scroll 0 0 transparent;
     border: medium none;
     color: #6E6F71;
     height: 26px;
     padding-left: 15px;
     width: 213px;
 }
+.LSBox .searchSection { margin: 1em 0 0 1.25em; }
 #user {
     float: right;
     font-size: 0.75em;
@@ -1529,6 +1530,7 @@ dl.enableFormTabbing dd {
     font-size: 90%;
     margin: 0 0 0.2em;
 }
+
 .formHelp:hover {
     color: Black;
     cursor: default;
