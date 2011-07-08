@@ -15,26 +15,30 @@
         <a href="" accesskey="1" title="Home" id="portal-logo">
           <img width="215" height="56" title="" alt="" src="images/logo.png" />
         </a>
-        <form id="search" name="" action="">
-          <input type="text" value="Procure neste site&hellip;" id="search-site" name="SearchableText" title="Search this site&hellip;" accesskey="4" class="inputLabel" size="15" />
-        </form>
+        <div id="portal-searchbox">
+          <form id="search" name="" action="">
+            <input type="text" value="Procure neste site&hellip;" id="search-site" name="SearchableText" title="Search this site&hellip;" accesskey="4" class="inputLabel" size="15" />
+            <input type="image" src="sfsubmit.png" align="absmiddle"  height="" width="" alt="Search button" border="0"
+     >
+          </form>
+        </div>
         <div id="nav-bar">
           <div id="user">
             <a href="" id="login-link">Log in</a>
             <a href="" id="user-id"><span id="username"></span></a>
             <div id="login-popup">
-              <span class="loginText">Autentique-se em Plone.org.br</span>
+              <span class="loginText">Autentique-se</span>
               <form method="post" action="" id="login-slide-form">
                 <div class="form">
                   <input type="hidden" name="came_from" value="" id="came-from-input" />
                   <input type="hidden" value="1" name="form.submitted" />
-                  <label for="__ac_name">username</label>
+                  <label for="__ac_name">nome de usuário</label>
                   <input type="text" size="15" name="__ac_name" value="" id="__ac_name" />
-                  <label for="__ac_password">password</label>
+                  <label for="__ac_password">senha</label>
                   <input type="password" size="15" name="__ac_password" value="" id="__ac_password" />
-                  <br /><a href="">Esqueceu a senha?</a>
+                  <br /><a href="../mail_password_form?userid=">Esqueceu?</a>
                 </div>
-                <input type="submit" class="context" name="submit" value="Let me in!" />
+                <input type="submit" class="context" name="submit" value="Deixe-me entrar!" />
               </form>
               <span class="createText"><a href="">Clique aqui</a> para criar uma conta</span>
             </div> <!-- FIM #login-popup -->
@@ -66,25 +70,9 @@
         <div></div>
       </div> <!-- FIM #nav -->
 
-      <div id="content-wrapper">
-        <div class="grid-row">
-          <div class="grid-cell position-leftmost width-two-thirds">
-            <div id="region-content">
-              <!-- Content goes here -->
-            </div>
-          </div>
-          <div class="grid-cell position-two-thirds width-third">
-            <div id="sidebar"> </div>
-          </div>
-        </div>
-        <div class="grid-row">
-          <div class="grid-cell position-leftmost width-full">
-            <div id="footer-portlets"> </div>
-          </div>
-        </div>
-      </div> <!-- FIM #content-wrapper -->
-
-      <div style="clear: both">&nbsp;</div>
+      <div id="breadcrumbs"></div>
+      <div id="content"></div>
+      <div class="visualClear"><!-- --></div>
 
     </div><!-- end inner-wrapper -->
     <div id="push"></div>
@@ -94,7 +82,7 @@
     <div id="footer-gradient"></div>
     <div id="footer">
       <a id="footer-logo" href="" title=""></a>
-      <p>The Plone<sup>&reg;</sup> CMS/WCM is &copy; 2000&ndash;2011 the Plone Foundation and friends. Site hosted by <a href="" style="color: white">Six Feet Up</a>.</p>
+      <p>The Plone<sup>&reg;</sup> CMS/WCM is &copy; 2000&ndash;2011 the Plone Foundation and friends. Site hosted by <a href="">Six Feet Up</a>.</p>
       <p>Plone<sup>&reg;</sup> and the Plone logo are registered trademarks of the Plone Foundation. You&#x2019;re looking good today.</p>
       <div id="sitemap">
         <dl>
