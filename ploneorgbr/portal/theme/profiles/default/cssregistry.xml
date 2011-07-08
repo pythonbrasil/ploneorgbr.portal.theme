@@ -4,7 +4,13 @@
  <stylesheet
     id="++theme++ploneorgbr.portal.theme/css/plone.css"
     expression="request/HTTP_X_THEME_ENABLED | nothing"
-    authenticated="False"
+    rendering="link"
+    applyPrefix="True"
+    />
+
+ <stylesheet
+    id="++theme++ploneorgbr.portal.theme/css/newplone.css"
+    expression="request/HTTP_X_THEME_ENABLED | nothing"
     rendering="link"
     applyPrefix="True"
     />
