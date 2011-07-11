@@ -180,6 +180,8 @@ body{
 #portal-personaltools dt.actionMenuHeader a:after {
     content: " ▼";
 }
+#contentActionMenus dl.actionMenu { line-height: 100%; }
+dl.actionMenu.activated dd { width: 100%; }
 #portal-personaltools dd.actionMenuContent ul li a {
     color: White;
 }
