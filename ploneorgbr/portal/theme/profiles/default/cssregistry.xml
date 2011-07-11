@@ -9,7 +9,7 @@
     />
 
  <stylesheet
-    id="++theme++ploneorgbr.portal.theme/css/newplone.css"
+    id="newplone.css"
     expression="request/HTTP_X_THEME_ENABLED | nothing"
     rendering="link"
     applyPrefix="True"
