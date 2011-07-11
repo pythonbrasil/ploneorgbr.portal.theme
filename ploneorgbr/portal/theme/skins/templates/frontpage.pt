@@ -9,35 +9,28 @@
   <script type="text/javascript">
     $(document).ready(function() {
 
-    // main vertical scroll
-    $("#splash-frontpage").scrollable({
-
+      // main vertical scroll
+      $("#splash-frontpage").scrollable({
         // basic settings
         vertical: true,
         keyboard: false,
+      // main navigator (thumbnail images)
+      }).navigator("#main_navi");
 
-    // main navigator (thumbnail images)
-    }).navigator("#main_navi");
+      // Accordion
+      $("#accordion").tabs("#accordion div.pane", {tabs: 'h2', effect: 'slide', initialIndex: null});
 
-    // Accordion
-    $("#accordion").tabs("#accordion div.pane", {tabs: 'h2', effect: 'slide', initialIndex: null});
-
-    // add new effect to the tabs
-    $.tools.tabs.addEffect("slide", function(i, done) {
-
+      // add new effect to the tabs
+      $.tools.tabs.addEffect("slide", function(i, done) {
         // 1. upon hiding, the active pane has a ruby background color
         this.getPanes().slideUp().css({backgroundColor: "#eee"});
-
         // 2. after a pane is revealed, its background is set to its original color (transparent)
         this.getPanes().eq(i).slideDown(function()  {
-            $(this).css({backgroundColor: '#eee'});
-
-            // the supplied callback must be called after the effect has finished its job
-            done.call();
+          $(this).css({backgroundColor: '#eee'});
+          // the supplied callback must be called after the effect has finished its job
+          done.call();
         });
-    });
-
-
+      });
 
     });
   </script>
@@ -46,9 +39,9 @@
 <metal:css fill-slot="style_slot">
   <style type="text/css">
   div.splash h1 {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
-  font-weight: 300;
-  font-size: 1.75em
+      font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
+      font-weight: 300;
+      font-size: 1.75em
   }
 
   /* Local overrides */
@@ -93,14 +86,14 @@
   .page {
       padding: 10px 20px;
       height: 225px;
-      color:White;
-      width:667px;
+      color: White;
+      width: 667px;
   }
 
   /* main navigator */
   #main_navi {
-      padding:0px !important;
-      margin: 0 1em 1em 0 !important;
+      padding: 0 !important;
+      margin: 0 0 1em 0 !important;
   }
 
   #main_navi li {
@@ -171,56 +164,58 @@
         <div id="pages">
           <!-- page #1 -->
           <div class="page">
-            <h1>Plone 4: Speed, Power &amp; Beauty</h1>
-            <p style="padding-right: 23em">We're proud to announce Plone 4, the
-                latest version of our state-of-the-art open source
-                <abbr title="Content Management System">CMS</abbr>. It's faster,
-                more powerful and more beautiful than ever before.</p>
-            <p><a href="/products/plone/features/" class="arrow">Take a tour of
-                the new features in Plone 4</a></p>
+            <h1>Plone 4: Velocidade, Poder &amp; Beleza</h1>
+            <p style="padding-right: 23em">Temos orgulho de anunciar o Plone 4,
+                a versão mais recente de nosso
+                <abbr title="Content Management System">CMS</abbr> de
+                código-aberto. Ele está mais rápido, mais
+                poderoso e mais belo do que antes.</p>
+            <p><a href="http://www.plone.org/products/plone/features/"
+                class="arrow">Faça um tour pelas novas funcionalidades do Plone
+                4</a></p>
           </div>
           <!-- page #2 -->
           <div class="page" style="margin-left: 15em">
-            <h1>Under the hood</h1>
-            <p style="width: 25em">Plone 4 brings significant performance
-                improvements &mdash; it's 50% faster than Plone 3. It's more
-                memory efficient, and serves massive files and video without
-                breaking a sweat.</p>
-            <p style="width: 25em">Plus, all of this Python &amp; NoSQL goodness
-                is wrapped in a sparkling new theme that is beautiful, accessible
-                and easy to customize.</p>
+            <h1>Por dentro do Plone</h1>
+            <p style="width: 25em">O Plone 4 traz melhorias significativas de
+                memória &ndash; é 50% mais rápido que o Plone 3. É ainda mais
+                eficiente no uso de memória e entrega arquivos e vídeos
+                massivamente sem maiores ajustes.</p>
+            <p style="width: 25em">Mais: toda a dádiva de uma solução Python
+                &amp; NoSQL vem embalada um novo tema acessível, bonito e fácil
+                de personalizar.</p>
           </div>
           <!-- page #3 -->
           <div class="page" style="margin-left: 10em">
-            <h1>Plone Powered</h1>
-            <p style="width: 36em">Large enterprises, small businesses, non-profits, universities
-                and governments around the world have chosen Plone for their
-                websites, intranets and extranets.  When security, scalability,
-                accessibility and approachability count — <br />Plone delivers.</p>
-            <p style="width: 32em">We're proud to power websites for
+            <h1>Turbinados por Plone</h1>
+            <p style="width: 36em">Grandes empresas, pequenos negócios, ONGs,
+                universidades e governos ao redor do mundo escolheram Plone para
+                seus portais, intranets e extranets.  Quando segurança,
+                escalabilidade, acessibilidade e facilidade de uso fazem a diferença
+                &mdash; o Plone entrega.</p>
+            <p style="width: 32em">Orgulhosamente turbinamos sites para
                 <a href="http://qt.nokia.com/">Nokia</a>,
-                <a href="http://www.amnesty.ch">Amnesty International</a>,
+                <a href="http://www.amnesty.ch">Anistia Internacional</a>,
                 <a href="http://discovermagazine.com">Discover Magazine</a>,
-                the <a href="http://www.brazil.gov.br">Government of Brazil</a>,
-                the <a href="http://norden.org">Nordic Council</a>, the universities of
-                <a href="http://ocw.mit.edu">MIT</a>,
+                <a href="http://norden.org">Nordic Council</a>, as
+                universidades <a href="http://ocw.mit.edu">MIT</a>,
                 <a href="http://seas.harvard.edu">Harvard</a> &amp;
                 <a href="http://www.smeal.psu.edu/">Penn State</a>,
-                the <a href="http://www.fsf.org/">Free Software Foundation</a>
-                and thousands of others.</p>
+                <a href="http://www.fsf.org/">Free Software
+                Foundation</a>, dentre milhares de outros.</p>
           </div>
         </div> <!-- FIM #pages -->
       </div> <!-- FIM #splash-frontpage -->
       <!-- main navigator -->
       <ul id="main_navi">
-        <li id="navi-1" style="width: 198px;" class="active">
-            <strong>The New Plone 4</strong> Speed, Power and Beauty
+        <li id="navi-1" style="width: 198px" class="active">
+            <strong>Novo Plone 4</strong> Velocidade, Poder e Beleza
         </li>
-        <li id="navi-2" style="width: 208px;">
-            <strong>Under the Hood</strong> Faster, new theme &amp; more
+        <li id="navi-2" style="width: 207px">
+            <strong>Por dentro do Plone</strong> Mais rápido, novo tema &amp; mais
         </li>
-        <li id="navi-3" style="width: 193px;">
-            <strong>Plone Powered</strong> Known by the company we keep
+        <li id="navi-3" style="width: 193px">
+            <strong>Turbinados por Plone</strong> Organizações que utilizam
         </li>
       </ul>
     </div>
@@ -234,27 +229,26 @@
   <div class="grid-row">
     <div class="grid-cell width-quarter position-leftmost">
       <div id="current" class="box">
-        <h1>Plone in Numbers</h1>
+        <h1>Plone em Números</h1>
         <ul>
           <li class="spotlight">
-              Plone is among the <a href="http://www.ohloh.net">top 2%</a>
-              of all open source projects worldwide,
-              with <a href="http://www.plone.org/team">340 core developers</a> and more than
-              <a href="http://plone.net/providers">300 solution providers</a>
-              in <a href="http://plone.net/providers">57 countries</a>.
-              The project has been actively developed
-              <a href="/documentation/faq/plone-history">since 2001</a>,
-              is available in more than
-              <a href="http://www.plone.org/documentation/faq/translations">40 languages</a>,
-              and has the <a href="http://cve.mitre.org">best security</a>
-              track record of any major CMS. <br/>
-              It is owned by the <a href="http://www.plone.org/foundation">Plone Foundation</a>,
-              a 501(c)(3) not-for-profit organization,
-              and is available for
-              <a href="http://www.plone.org/download">all major operating systems</a>.
-              <div class="sources">
-              Sources:
-              <a title="Common Vulnerabilities and Exposures (CVE)" style="display: inline;" href="http://cve.mitre.org/">CVE</a> and
+              O Plone está entre os <a href="http://www.ohloh.net">top 2%</a>
+              de todos os projetos de código-aberto do mundo, com
+              <a href="http://www.plone.org/team">340 core developers</a> e
+              mais de <a href="http://plone.net/providers">300 consultorias</a>
+              em <a href="http://plone.net/providers">57 países</a>.
+              O projeto é desenvolvido ativamente
+              <a href="/documentation/faq/plone-history">desde 2001</a>,
+              está disponível para mais de
+              <a href="http://www.plone.org/documentation/faq/translations">40
+              línguas</a> e tem o melhor histórico de
+              <a href="http://cve.mitre.org">segurança</a> entre os grandes CMS.
+              Pertence à <a href="http://www.plone.org/foundation"
+              >Plone Foundation</a>, uma organização sem fins
+              lucrativos, e está disponível para
+              <a href="http://www.plone.org/download">Mac, Linux e Windows</a>.
+              <div class="sources">Fontes:
+              <a title="Common Vulnerabilities and Exposures (CVE)" style="display: inline;" href="http://cve.mitre.org/">CVE</a> e
                   <a title="Ohloh, the open source network" style="display: inline;" href="http://www.ohloh.net/p/plone">Ohloh</a>.
               </div>
           </li>
@@ -264,20 +258,20 @@
 
     <div class="grid-cell width-quarter position-quarter">
       <div id="news" class="box">
-        <h1>News</h1>
+        <h1>Notícias</h1>
         <ul>
           <tal:newsitem tal:repeat="newsitem news">
             <li class="link-tile">
               <a href=""
                   tal:attributes="href newsitem/getURL; title newsitem/Description"
-                  tal:content="newsitem/Title">News item title</a>
+                  tal:content="newsitem/Title">Título da notícia</a>
                   <span class="info"
                       tal:content="python:here.toLocalizedTime(newsitem.Date)">Jul 9, 2008</span>
             </li>
           </tal:newsitem>
           <li>
-            <a class="add" href="/news/createObject?type_name=News%20Item">Add news&hellip;</a>
-            <a href="/news/">More news&hellip;</a>
+            <a class="add" href="/news/createObject?type_name=News%20Item">Adicionar notícia&hellip;</a>
+            <a href="/news/">Mais notícias&hellip;</a>
           </li>
         </ul>
       </div> <!-- FIM #news -->
@@ -285,15 +279,15 @@
 
     <div class="grid-cell width-quarter position-half">
       <div id="events" class="box">
-        <h1>Upcoming Events</h1>
+        <h1>Próximos Eventos</h1>
         <ul>
           <tal:event tal:repeat="event events">
           <li class="link-tile">
             <a href="" title=""
                 tal:attributes="href event/getURL; title event/Description"
-                tal:content="event/Title">Event title</a>
+                tal:content="event/Title">Título do evento</a>
                 <span class="info">
-                  <span tal:replace="event/location">Location</span><br />
+                  <span tal:replace="event/location">Local:</span><br />
                   <span tal:replace="python:here.toLocalizedTime(event.start)">
                       May 5
                   </span>
@@ -301,8 +295,8 @@
           </li>
           </tal:event>
           <li>
-            <a class="add" href="/events/community/createObject?type_name=Event">Add event&hellip;</a>
-            <a href="/events/community/">Upcoming&hellip;</a>
+            <a class="add" href="/events/community/createObject?type_name=Event">Adicionar evento&hellip;</a>
+            <a href="/events/community/">Próximos&hellip;</a>
           </li>
         </ul>
       </div> <!-- FIM #events -->
@@ -312,58 +306,55 @@
       <div id="accordion">
         <h2 class="current">Baixe o Plone</h2>
         <div class="pane" style="display:block">
-          <a id="download-link" href="/download">Faça o download<br />
-              Plone
-              <!--span tal:content="python: try: here.products.getFeaturedProjectRelease().getId()">3.2.0</span>
+          <a id="download-link" href="/download">Faça o download
+              <br />da última versão.
+              <!--Plone <br />
+              <span tal:content="python: try: here.products.getFeaturedProjectRelease().getId()">3.2.0</span>
               &middot;
-              <span tal:content="python: try: here.products.getFeaturedProjectRelease().effective_date.strftime('%h ' + u'\u2019' + '%y')">Feb 2009</span--></a>
+              <span tal:content="python: try: here.products.getFeaturedProjectRelease().effective_date.strftime('%h ' + u'\u2019' + '%y')">Feb 2009</span>
+              --></a>
           <dl>
               <dt><a href="/products/plone/features/">Novidades do Plone 4</a></dt>
-              <dd>Visão geral sobre as novas funcionalidades.</dd>
+              <dd>Visão geral da plataforma.</dd>
               <dt><a href="http://dev.plone.org/plone/roadmap">Roadmap</a></dt>
               <dd>Planos para o futuro.</dd>
               <dt><a href="/products/plone/releases">Versões anteriores</a></dt>
-              <dd>Procurando uma versão anterior?</dd>
+              <dd>Procurando outras versões?</dd>
               <dt><a href="/products">Produtos e extensões</a></dt>
-              <dd>Adapte o Plone às suas necessidades.</dd>
+              <dd>Adapte seu Plone.</dd>
           </dl>
         </div>
         <h2>Aprenda Plone</h2>
         <div class="pane">
           <dl>
             <dt><a href="/documentacao">Documentação</a></dt>
-            <dd>O Plone tem uma grande coleção de documentações online.</dd>
+            <dd>Acesse e contribua para a documentação em português.</dd>
             <dt><a href="http://www.plone.org/documentation/books">Livros</a></dt>
-            <dd>Para aqueles que pensam melhor com um livro.</dd>
+            <dd>Consolide seus conhecimentos.</dd>
             <dt><a href="http://www.plone.org/support">Fóruns e salas de bate-papo</a></dt>
-            <dd>Pessoas sempre prontas a responder suas dúvidas de Plone.</dd>
+            <dd>Não entre em pânico! Você não está sozinho.</dd>
             <dt><a href="http://www.plone.org/events/training">Treinamentos em Plone</a></dt>
-            <dd>Permita que um especialista em Plone lhe oriente a se tornar produtivo.</dd>
+            <dd>Permita que um especialista em Plone lhe oriente a se tornar mais produtivo.</dd>
             <dt><a href="http://plone.net">Suporte comercial</a></dt>
-            <dd>Mais de 300 empresas ao redor do mundo oferecem serviços em Plone.</dd>
+            <dd>Mais de 300 empresas ao redor do mundo oferecem serviços para a plataforma Plone.</dd>
           </dl>
         </div>
 
-        <h2>Envolva-se</h2>
+        <h2>Envolva-se com a comunidade</h2>
         <div class="pane">
           <dl>
+            <dt><a href="http://dev.plone.org/plone">Traduza, escreva documentação ou ajude a testar</a></dt>
+            <dd>Diversos tipos de ações podem tornar o Plone melhor.</dd>
             <dt><a href="http://plone.org/documentation/faq/suggest-a-feature-for-plone">Sugira novas funcionalidades</a></dt>
             <dd>Tem uma ideia incrível para uma nova funcionalidade no Plone?</dd>
-
-            <dt><a href="http://dev.plone.org/plone">Relate bugs</a></dt>
-            <dd>O Plone não tem bugs. Mas se você encontrar um, avise aqui.</dd>
-
-            <dt><a href="http://dev.plone.org/plone">Desenvolva código</a></dt>
-            <dd>Se você é fluente em Python, HTML, CSS ou JS, una-se!</dd>
-
-            <dt><a href="http://dev.plone.org/plone">Traduza, escreva documentações, ajude a testar</a></dt>
-            <dd>Existem várias coisas que você fazer para tornar o Plone melhor.</dd>
-
-            <dt><a href="http://planet.plone.org">Leia blogs, publique no seu</a></dt>
-            <dd>Atualize-se sobre o Plone</dd>
-
+            <dt><a href="http://dev.plone.org/plone">Reporte bugs</a></dt>
+            <dd>O Plone não tem bugs. Mas caso você encontre um, por favor, abra um ticket.</dd>
+            <dt><a href="http://dev.plone.org/plone">Desenvolva códigos</a></dt>
+            <dd>Fluente em Python, HTML, CSS ou Javascript? Una-se a nós!</dd>
+            <dt><a href="http://planet.plone.org">Leia blogs e publique o seu</a></dt>
+            <dd>Atualize-se sobre o Plone.</dd>
             <dt><a href="/foundation">Apóie a Plone Foundation</a></dt>
-            <dd>Se tudo mais falhar, doar dinheiro pode ser uma boa opção.</dd>
+            <dd>Doe dinheiro e contribua com a evolução do Plone.</dd>
           </dl>
         </div>
 

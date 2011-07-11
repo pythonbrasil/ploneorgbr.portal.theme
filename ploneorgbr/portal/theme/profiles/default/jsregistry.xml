@@ -2,7 +2,6 @@
 <object name="portal_javascripts" meta_type="JavaScripts Registry">
 
  <javascript id="++resource++plone.app.jquerytools.plugins.js" enabled="True" />
-
  <javascript id="login.js" />
 
 </object>

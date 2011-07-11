@@ -187,7 +187,7 @@ body{
     background-color: White;
 }
 #nav-bar {
-    background:url(../images/bg/nav_bg.png) repeat-x scroll left bottom transparent;
+    background:url("../images/bg/nav_bg.png") repeat-x scroll left bottom transparent;
     border-color: #debe40 #debe40 #a38b2f;
     border-radius: 5px 5px 5px 5px;
     border-style: solid;
@@ -214,7 +214,7 @@ ul.navigation li.selected a, ul.navigation li.active a {
     position: relative;
 }
 #portal-searchbox .searchField {
-    background: url(../images/bg/search.png) no-repeat scroll 0 0 transparent;
+    background: url("../images/bg/search.png") no-repeat scroll 0 0 transparent;
     border: medium none;
     color: #6E6F71;
     height: 26px;
@@ -269,7 +269,7 @@ div.splash {
     font-weight: bold;
 }
 #content div.splash a.pointer {
-    background: url("//plone.org/images/sprite-ploneorg.png") no-repeat scroll 0 -115px transparent;
+    background: url("../images/sprite-ploneorg.png") no-repeat scroll 0 -115px transparent;
     font-size: 115%;
     padding-left: 16px;
 }
@@ -310,7 +310,7 @@ div.sidebar {
     margin-bottom: 0;
 }
 #content div.sidebar ul li a {
-    background: url("//plone.org/images/sprite-ploneorg.png") no-repeat scroll 0 -441px transparent;
+    background: url("../images/sprite-ploneorg.png") no-repeat scroll 0 -441px transparent;
     border-bottom: medium none;
     border-top: 1px solid #EEEEEE;
     display: block;
@@ -340,7 +340,7 @@ img.book-cover {
     padding: 2px;
 }
 #splash-frontpage {
-    background: url("http://plone.org//images/frontpage-image.png") no-repeat scroll 0 -23px #205C90;
+    background: url("../images/frontpage-image.png") no-repeat scroll 0 -23px #205C90;
     margin-right: 1em;
     min-height: 15.5em;
 }
@@ -355,7 +355,7 @@ img.book-cover {
     height: 11em;
 }
 #splash-download-package {
-    background: url("//plone.org/images/sprite-ploneorg.png") no-repeat scroll 0 -495px transparent;
+    background: url("../images/sprite-ploneorg.png") no-repeat scroll 0 -495px transparent;
     height: 130px;
     left: -30px;
     margin-left: 2em;
@@ -368,7 +368,7 @@ img.book-cover {
     text-align: right;
 }
 #splash-download-plone {
-    background: url("//plone.org/images/sprite-ploneorg.png") no-repeat scroll 0 -30px transparent !important;
+    background: url("../images/sprite-ploneorg.png") no-repeat scroll 0 -30px transparent !important;
     display: block;
     float: right;
     font-size: 1em !important;
@@ -379,7 +379,7 @@ img.book-cover {
     width: 310px;
 }
 #splash-documentation {
-    background: url("/docs-splash.png") no-repeat scroll 2.5em 3.5em #205C90;
+    background: url("../images/docs-splash.png") no-repeat scroll 2.5em 3.5em #205C90;
     height: 15em;
     padding-left: 14em;
 }
@@ -387,7 +387,7 @@ img.book-cover {
     height: 15em;
 }
 #splash-support {
-    background: url("support-sprite.png") no-repeat scroll 20em 9em #205C90;
+    background: url("../images/support-sprite.png") no-repeat scroll 20em 9em #205C90;
     min-height: 13em;
 }
 #splash-support p {
@@ -477,7 +477,7 @@ div.pane.horizontal #categories {
     padding: 0;
 }
 #categories ul.horizontal li h2 a {
-    background: url("support-sprite.png") no-repeat scroll left top #205C90;
+    background: url("../images/support-sprite.png") no-repeat scroll left top #205C90;
     color: White !important;
     display: block;
     letter-spacing: 0;
@@ -568,7 +568,7 @@ div.box {
     padding: 9px 12px;
 }
 div.box h1 {
-    background: url("//plone.org/images/sprite-ploneorg.png") repeat-x scroll 0 -163px #EEEEEE;
+    background: url("../images/sprite-ploneorg.png") repeat-x scroll 0 -163px #EEEEEE;
     font-size: 120%;
     line-height: 2em;
     margin: -0.625em -1em !important;
@@ -683,7 +683,7 @@ a.link-parent {
     margin-bottom: 0.3em;
 }
 #download-link {
-    background: url("//plone.org/images/sprite-ploneorg.png") no-repeat scroll 0 -495px transparent;
+    background: url("../images/sprite-ploneorg.png") no-repeat scroll 0 -495px transparent;
     border-bottom: medium none !important;
     color: white !important;
     display: block;
@@ -1287,7 +1287,7 @@ dl.collapsible dd.collapsibleContent > dl {
     padding: 0;
 }
 dl.expandedInlineCollapsible dt.collapsibleHeader, dl.expandedBlockCollapsible dt.collapsibleHeader {
-    background: url("treeExpanded.png") no-repeat scroll 6px 50% White;
+    background: url("../images/treeExpanded.png") no-repeat scroll 6px 50% White;
     cursor: pointer;
     padding: 0 6px 0 22px;
 }
@@ -1430,7 +1430,7 @@ li.formTab a.notify {
     color: Black;
 }
 li.formTab a.required span {
-    background-image: url("/required.png");
+    background-image: url("../images/required.png");
     background-position: right center;
     background-repeat: no-repeat;
     padding-right: 8px;
@@ -1569,7 +1569,7 @@ body.template-join_form #content input {
     width: 7em;
 }
 #user #login-link {
-    background:url(../images/bg/login_arrow.png) no-repeat scroll right 8px transparent;
+    background:url("../images/bg/login_arrow.png") no-repeat scroll right 8px transparent;
     padding-right: 13px;
 }
 #login-popup {
@@ -1622,7 +1622,7 @@ body.template-join_form #content input {
     text-decoration: underline;
 }
 #login-popup .context {
-    background: url("login_btn.png") no-repeat scroll 0 0 transparent;
+    background: url("../images/login_btn.png") no-repeat scroll 0 0 transparent;
     border: medium none;
     color: #FFFFFF;
     cursor: pointer;
@@ -1663,7 +1663,7 @@ dl.toc dd ol {
     height: 16em;
 }
 #footer-gradient {
-    background: url(../images/sprite-ploneorg.png) repeat-x scroll left top transparent;
+    background: url("../images/sprite-ploneorg.png") repeat-x scroll left top transparent;
     height: 7px;
 }
 #push {
@@ -1687,8 +1687,6 @@ dl.toc dd ol {
     color: #329FD7;
 }
 #footer-logo {
-    background-image: url(../images/sprite-ploneorg.png);
-    background-position: 0 -376px;
     border-right: 1px solid white;
     float: left;
     height: 44px;

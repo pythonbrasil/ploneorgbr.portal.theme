@@ -14,7 +14,7 @@ $(function(){
     // /plone.org/login_form if we are local or staging
     if(url.indexOf('http://plone.org.br') != 0 && url.indexOf('https://plone.org.br') != 0){
         if(url.indexOf('http://staging.plone.org.br') == 0 || url.indexOf('https://staging.plone.org.br') == 0){
-            $(this).attr('action', 'https://staging.plone.org/login_form');
+            $(this).attr('action', 'https://staging.plone.org.br/login_form');
         } else {
             $(this).attr('action', '/plone.org.br/login_form');
         }
