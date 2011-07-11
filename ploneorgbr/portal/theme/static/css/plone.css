@@ -221,6 +221,7 @@ ul.navigation li.selected a, ul.navigation li.active a {
     padding-left: 15px;
     width: 213px;
 }
+.template-frontpage .searchSection, .template-frontpage #portal-breadcrumbs { display: none; }
 .LSBox .searchSection { margin: 1em 0 0 1.25em; }
 #user {
     float: right;
@@ -904,14 +905,10 @@ dl.portletNavigationTree .navTreeLevel3 li a {
     position: relative;
     top: -3em;
 }
-#content-views {
-    margin: 1em 0;
-}
 #edit-bar {
     background-color: #75AD0A;
     clear: both;
     margin: 0 auto;
-    width: 910px;
 }
 #edit-menu ul {
     background-color: #76AD17;
@@ -1052,10 +1049,6 @@ dl.error dd {
 }
 .contentActions {
     background-color: white;
-    height: 1.6em;
-    padding: 0 0 0 1em;
-    position: relative;
-    text-align: right;
     z-index: 2;
 }
 .contentActions ul, .contentActions li {

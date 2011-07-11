@@ -14,6 +14,9 @@
     <drop theme="/html/head/meta" />
     <after content="/html/head/meta" theme-children="/html/head" />
 
+    <!-- Add title -->
+    <replace content="/html/head/title" theme="/html/head/title" />
+
     <!-- Copy style, script and link tags in the order they appear in the content -->
     <after
         content="/html/head/style | /html/head/script | /html/head/link"
@@ -36,21 +39,19 @@
     <!--replace css:content="#portal-siteactions li" css:theme-children="#portal-siteactions li" /-->
 
     <!-- Searchbox -->
-
+    <drop css:content="input.searchButton" />
     <replace css:content-children='#portal-searchbox' css:theme-children='#portal-searchbox' />
-    <!--copy attributes="*" css:co  ntent="#portal-searchbox form" css:theme="#search" />
-    <copy attributes="*" css:content="#searchGadget" css:theme="#search-site" /-->
 
     <!-- Global navigation -->
     <replace css:content='#portal-globalnav li' css:theme-children='#main-nav' />
 
     <!-- Breadcrumbs -->
-    <!--replace css:content='#portal-breadcrumbs' css:theme='#breadcrumbs' /-->
+    <replace css:content='#portal-breadcrumbs' css:theme='#breadcrumbs' />
 
     <!-- Document Content -->
-    <replace css:content="#content" css:theme="#content" />
-    <before css:content="#edit-bar" css:theme="#document-content" css:if-content="" />
+    <before css:content="#edit-bar" css:theme="#content" />
     <before css:content=".portalMessage" css:theme="#content" />
+    <replace css:content="#content" css:theme="#content" />
 
     <!-- Columns -->
     <replace css:content-children="#portal-column-one > *" css:theme-children="#column-one" />
