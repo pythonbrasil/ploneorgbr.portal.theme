@@ -275,7 +275,7 @@
             </li>
           </tal:newsitem>
           <li>
-            <a class="add" href="/noticias/createObject?type_name=News%20Item">
+            <a class="add" href="noticias/createObject?type_name=News%20Item">
                 Adicionar notícia&hellip;</a>
                 <a href="/noticias/">Mais notícias&hellip;</a>
           </li>
