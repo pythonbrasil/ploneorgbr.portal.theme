@@ -50,7 +50,7 @@
 
     <!-- Document Content -->
     <before css:content="#edit-bar" css:theme="#content" />
-    <before css:content=".portalMessage" css:theme="#content" />
+    <!--before css:content=".portalMessage" css:theme="#content" /-->
     <replace css:content="#content" css:theme="#content" />
 
     <!-- Columns -->
