@@ -191,8 +191,8 @@
             <p style="width: 36em">Grandes empresas, pequenos negócios, ONGs,
                 universidades e governos ao redor do mundo escolheram Plone para
                 seus portais, intranets e extranets.  Quando segurança,
-                escalabilidade, acessibilidade e facilidade de uso fazem a diferença
-                &mdash; o Plone entrega.</p>
+                escalabilidade, acessibilidade e facilidade de uso fazem a
+                diferença &mdash; o Plone entrega.</p>
             <p style="width: 32em">Orgulhosamente turbinamos sites para
                 <a href="http://qt.nokia.com/">Nokia</a>,
                 <a href="http://www.amnesty.ch">Anistia Internacional</a>,
@@ -212,7 +212,8 @@
             <strong>Novo Plone 4</strong> Velocidade, Poder e Beleza
         </li>
         <li id="navi-2" style="width: 207px">
-            <strong>Por dentro do Plone</strong> Mais rápido, novo tema &amp; mais
+            <strong>Por dentro do Plone</strong> Mais rápido, novo tema &amp;
+            mais
         </li>
         <li id="navi-3" style="width: 193px">
             <strong>Turbinados por Plone</strong> Organizações que utilizam
@@ -248,8 +249,11 @@
               lucrativos, e está disponível para
               <a href="http://www.plone.org/download">Mac, Linux e Windows</a>.
               <div class="sources">Fontes:
-              <a title="Common Vulnerabilities and Exposures (CVE)" style="display: inline;" href="http://cve.mitre.org/">CVE</a> e
-                  <a title="Ohloh, the open source network" style="display: inline;" href="http://www.ohloh.net/p/plone">Ohloh</a>.
+              <a title="Common Vulnerabilities and Exposures (CVE)"
+                  style="display: inline;" href="http://cve.mitre.org/">CVE</a>
+                  e <a title="Ohloh, the open source network"
+                  style="display: inline;" href="http://www.ohloh.net/p/plone">
+                  Ohloh</a>.
               </div>
           </li>
         </ul>
@@ -266,12 +270,14 @@
                   tal:attributes="href newsitem/getURL; title newsitem/Description"
                   tal:content="newsitem/Title">Título da notícia</a>
                   <span class="info"
-                      tal:content="python:here.toLocalizedTime(newsitem.Date)">Jul 9, 2008</span>
+                      tal:content="python:here.toLocalizedTime(newsitem.Date)">
+                      Jul 9, 2008</span>
             </li>
           </tal:newsitem>
           <li>
-            <a class="add" href="/news/createObject?type_name=News%20Item">Adicionar notícia&hellip;</a>
-            <a href="/news/">Mais notícias&hellip;</a>
+            <a class="add" href="/noticias/createObject?type_name=News%20Item">
+                Adicionar notícia&hellip;</a>
+                <a href="/noticias/">Mais notícias&hellip;</a>
           </li>
         </ul>
       </div> <!-- FIM #news -->
@@ -295,8 +301,8 @@
           </li>
           </tal:event>
           <li>
-            <a class="add" href="/events/community/createObject?type_name=Event">Adicionar evento&hellip;</a>
-            <a href="/events/community/">Próximos&hellip;</a>
+            <a class="add" href="/eventos/createObject?type_name=Event">Adicionar evento&hellip;</a>
+            <a href="/eventos/comunidade/">Próximos&hellip;</a>
           </li>
         </ul>
       </div> <!-- FIM #events -->
@@ -306,7 +312,7 @@
       <div id="accordion">
         <h2 class="current">Baixe o Plone</h2>
         <div class="pane" style="display:block">
-          <a id="download-link" href="/download">Faça o download
+          <a id="download-link" href="http://www.plone.org/download">Faça o download
               <br />da última versão.
               <!--Plone <br />
               <span tal:content="python: try: here.products.getFeaturedProjectRelease().getId()">3.2.0</span>
@@ -314,13 +320,13 @@
               <span tal:content="python: try: here.products.getFeaturedProjectRelease().effective_date.strftime('%h ' + u'\u2019' + '%y')">Feb 2009</span>
               --></a>
           <dl>
-              <dt><a href="/products/plone/features/">Novidades do Plone 4</a></dt>
+              <dt><a href="http://www.plone.org/products/plone/features/">Novidades do Plone 4</a></dt>
               <dd>Visão geral da plataforma.</dd>
               <dt><a href="http://dev.plone.org/plone/roadmap">Roadmap</a></dt>
               <dd>Planos para o futuro.</dd>
-              <dt><a href="/products/plone/releases">Versões anteriores</a></dt>
+              <dt><a href="http://www.plone.org/products/plone/releases">Versões anteriores</a></dt>
               <dd>Procurando outras versões?</dd>
-              <dt><a href="/products">Produtos e extensões</a></dt>
+              <dt><a href="http://www.plone.org/products">Produtos e extensões</a></dt>
               <dd>Adapte seu Plone.</dd>
           </dl>
         </div>
@@ -353,7 +359,7 @@
             <dd>Fluente em Python, HTML, CSS ou Javascript? Una-se a nós!</dd>
             <dt><a href="http://planet.plone.org">Leia blogs e publique o seu</a></dt>
             <dd>Atualize-se sobre o Plone.</dd>
-            <dt><a href="/foundation">Apóie a Plone Foundation</a></dt>
+            <dt><a href="http://www.plone.org/foundation">Apóie a Plone Foundation</a></dt>
             <dd>Doe dinheiro e contribua com a evolução do Plone.</dd>
           </dl>
         </div>
