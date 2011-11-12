@@ -178,6 +178,7 @@ body{
     background: none;
     font-size: 100%;
     margin-right: 0.5em;
+    padding-top: 0;
 }
 #portal-personaltools dt.actionMenuHeader a:after {
     content: " ▼";
