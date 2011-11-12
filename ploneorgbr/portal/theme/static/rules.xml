@@ -67,8 +67,11 @@
     <replace css:content="#content" css:theme="#content" />
 
     <!-- Columns -->
-    <replace css:content-children="#portal-column-one > *" css:theme="#column-one" />
-    <before css:content-children="#portal-column-two > *" css:theme="#push" />
+    <!--replace css:content-children="#portal-column-one > *" css:theme="#column-one" /-->
+    <before
+        css:content-children="#portal-column-two > *"
+        css:theme="#content > div:nth-child(2) .width-quarter"
+        />
 
     <!-- Doormat -->
     <before
