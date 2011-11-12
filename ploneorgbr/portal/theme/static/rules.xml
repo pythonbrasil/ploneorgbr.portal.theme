@@ -45,6 +45,13 @@
     <!-- Global navigation -->
     <replace css:content='#portal-globalnav li' css:theme-children='#main-nav' />
 
+    <!-- Logged-in slider -->
+    <replace
+        css:if-content='#portal-personaltools'
+        css:content='#portal-personaltools'
+        css:theme-children='#user'
+        />
+
     <!-- Breadcrumbs -->
     <replace css:content='#portal-breadcrumbs' css:theme='#breadcrumbs' />
 
