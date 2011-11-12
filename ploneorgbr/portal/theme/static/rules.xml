@@ -47,7 +47,7 @@
 
     <!-- Logged-in slider -->
     <replace
-        css:if-content='#portal-personaltools'
+        css:if-content='#user-name'
         css:content='#portal-personaltools'
         css:theme-children='#user'
         />
@@ -56,7 +56,7 @@
     <replace css:content='#portal-breadcrumbs' css:theme='#breadcrumbs' />
 
     <!-- Banner -->
-    <before
+    <replace
         css:content=".portlet-static-banner p"
         css:theme-children="#content div:nth-child(2) .width-quarter"
         />
@@ -72,7 +72,7 @@
 
     <!-- Doormat -->
     <before
-        css:content="#doormat-container .column-0 .doormatSectionBody dt"
+        css:content="#doormat-container .column-0 dt"
         css:theme-children="#sitemap dl:nth-child(1)"
         />
     <replace
@@ -81,7 +81,7 @@
         />
 
     <before
-        css:content="#doormat-container .column-1 .doormatSectionBody dt"
+        css:content="#doormat-container .column-1 dt"
         css:theme-children="#sitemap dl:nth-child(2)"
         />
     <replace
@@ -90,7 +90,7 @@
         />
 
     <before
-        css:content="#doormat-container .column-2 .doormatSectionBody dt"
+        css:content="#doormat-container .column-2 dt"
         css:theme-children="#sitemap dl:nth-child(3)"
         />
     <replace
@@ -99,7 +99,7 @@
         />
 
     <before
-        css:content="#doormat-container .column-3 .doormatSectionBody dt"
+        css:content="#doormat-container .column-3 dt"
         css:theme-children="#sitemap dl:nth-child(4)"
         />
     <replace
@@ -108,7 +108,7 @@
         />
 
     <before
-        css:content="#doormat-container .column-4 .doormatSectionBody dt"
+        css:content="#doormat-container .column-4 dt"
         css:theme-children="#sitemap dl:nth-child(5)"
         />
     <replace
