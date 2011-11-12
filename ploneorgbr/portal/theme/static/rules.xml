@@ -64,6 +64,28 @@
     <replace css:content-children="#portal-column-one > *" css:theme-children="#column-one" />
     <replace css:content-children="#portal-column-two > *" css:theme-children="#column-two" />
 
+    <!-- Doormat -->
+    <replace
+        css:content="#doormat-container .column-0 .doormatSectionBody a"
+        css:theme="#sitemap dd:nth-child(1) a"
+        />
+    <replace
+        css:content="#doormat-container .column-1 .doormatSectionBody a"
+        css:theme="#sitemap dd:nth-child(2) a"
+        />
+    <replace
+        css:content="#doormat-container .column-2 .doormatSectionBody a"
+        css:theme="#sitemap dd:nth-child(3) a"
+        />
+    <replace
+        css:content="#doormat-container .column-3 .doormatSectionBody a"
+        css:theme="#sitemap dd:nth-child(4) a"
+        />
+    <replace
+        css:content="#doormat-container .column-4 .doormatSectionBody a"
+        css:theme="#sitemap dd:nth-child(5) a"
+        />
+
   </rules>
 
 </rules>
