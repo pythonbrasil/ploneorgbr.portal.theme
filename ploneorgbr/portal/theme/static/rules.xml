@@ -55,6 +55,12 @@
     <!-- Breadcrumbs -->
     <replace css:content='#portal-breadcrumbs' css:theme='#breadcrumbs' />
 
+    <!-- Banner -->
+    <before
+        css:content=".portlet-static-banner p"
+        css:theme-children="#content div:nth-child(2) .width-quarter"
+        />
+
     <!-- Document Content -->
     <before css:content="#edit-bar" css:theme="#content" />
     <!--before css:content=".portalMessage" css:theme="#content" /-->
@@ -65,25 +71,49 @@
     <replace css:content-children="#portal-column-two > *" css:theme-children="#column-two" />
 
     <!-- Doormat -->
+    <before
+        css:content="#doormat-container .column-0 .doormatSectionBody dt"
+        css:theme-children="#sitemap dl:nth-child(1)"
+        />
     <replace
         css:content="#doormat-container .column-0 .doormatSectionBody a"
-        css:theme="#sitemap dd:nth-child(1) a"
+        css:theme-children="#sitemap dl:nth-child(1)"
+        />
+
+    <before
+        css:content="#doormat-container .column-1 .doormatSectionBody dt"
+        css:theme-children="#sitemap dl:nth-child(2)"
         />
     <replace
         css:content="#doormat-container .column-1 .doormatSectionBody a"
-        css:theme="#sitemap dd:nth-child(2) a"
+        css:theme-children="#sitemap dl:nth-child(2)"
+        />
+
+    <before
+        css:content="#doormat-container .column-2 .doormatSectionBody dt"
+        css:theme-children="#sitemap dl:nth-child(3)"
         />
     <replace
         css:content="#doormat-container .column-2 .doormatSectionBody a"
-        css:theme="#sitemap dd:nth-child(3) a"
+        css:theme-children="#sitemap dl:nth-child(3)"
+        />
+
+    <before
+        css:content="#doormat-container .column-3 .doormatSectionBody dt"
+        css:theme-children="#sitemap dl:nth-child(4)"
         />
     <replace
         css:content="#doormat-container .column-3 .doormatSectionBody a"
-        css:theme="#sitemap dd:nth-child(4) a"
+        css:theme-children="#sitemap dl:nth-child(4)"
+        />
+
+    <before
+        css:content="#doormat-container .column-4 .doormatSectionBody dt"
+        css:theme-children="#sitemap dl:nth-child(5)"
         />
     <replace
         css:content="#doormat-container .column-4 .doormatSectionBody a"
-        css:theme="#sitemap dd:nth-child(5) a"
+        css:theme-children="#sitemap dl:nth-child(5)"
         />
 
   </rules>
