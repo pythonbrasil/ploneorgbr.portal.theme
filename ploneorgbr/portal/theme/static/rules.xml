@@ -58,7 +58,7 @@
     <!-- Banner -->
     <replace
         css:content=".portlet-static-banner p"
-        css:theme-children="#content div:nth-child(2) .width-quarter"
+        css:theme-children="#content > div:nth-child(2) .width-quarter"
         />
 
     <!-- Document Content -->
@@ -67,8 +67,8 @@
     <replace css:content="#content" css:theme="#content" />
 
     <!-- Columns -->
-    <replace css:content-children="#portal-column-one > *" css:theme-children="#column-one" />
-    <replace css:content-children="#portal-column-two > *" css:theme-children="#column-two" />
+    <replace css:content-children="#portal-column-one > *" css:theme="#column-one" />
+    <before css:content-children="#portal-column-two > *" css:theme="#push" />
 
     <!-- Doormat -->
     <before
