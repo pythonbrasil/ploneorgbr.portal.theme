@@ -118,7 +118,12 @@
         css:content="#doormat-container .column-4 .doormatSectionBody a"
         css:theme-children="#sitemap dl:nth-child(5)"
         />
-
+    <!-- Google Analytics 
+        -->
+    <after
+        css:content="#googleanalytics-snippet"
+        css:theme-children="#footer-wrapper" 
+        />
   </rules>
 
 </rules>
