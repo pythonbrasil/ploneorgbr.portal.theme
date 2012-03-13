@@ -1,5 +1,6 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
+    xmlns:cmf="http://namespaces.zope.org/cmf"
     xmlns:five="http://namespaces.zope.org/five"
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     xmlns:plone="http://namespaces.plone.org/plone"
@@ -7,9 +8,9 @@
     i18n_domain="ploneorgbr.portal.theme">
 
   <five:registerPackage package="." initialize=".initialize" />
+  <cmf:registerDirectory name="skins" directory="skins" recursive="True" />
 
   <include package=".browser" />
-  <include file="skins.zcml" />
 
   <genericsetup:registerProfile
       name="default"
