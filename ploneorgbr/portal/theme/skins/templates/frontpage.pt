@@ -219,16 +219,7 @@
             <strong>Turbinados por Plone</strong> Organizações que utilizam
         </li>
       </ul>
-    </div>
 
-    <div class="grid-cell width-quarter position-three-quarters">
-      <tal:banners tal:replace="structure provider:ploneorg.carousel" />
-    </div>
-
-  </div> <!-- End row -->
-
-  <div class="grid-row">
-    <div class="grid-cell width-quarter position-leftmost">
       <div id="current" class="box">
         <h1>Plone em Números</h1>
         <ul>
@@ -257,10 +248,7 @@
               </div>
           </li>
         </ul>
-      </div> <!-- FIM #current -->
-    </div>
-
-    <div class="grid-cell width-quarter position-quarter">
+      </div>
       <div id="news" class="box">
         <h1>Notícias</h1>
         <ul>
@@ -280,10 +268,7 @@
                 <a href="/noticias/">Mais notícias&hellip;</a>
           </li>
         </ul>
-      </div> <!-- FIM #news -->
-    </div>
-
-    <div class="grid-cell width-quarter position-half">
+      </div>
       <div id="events" class="box">
         <h1>Próximos Eventos</h1>
         <ul>
@@ -305,10 +290,11 @@
             <a href="/eventos/comunidade/">Próximos&hellip;</a>
           </li>
         </ul>
-      </div> <!-- FIM #events -->
-    </div> <!-- End cell -->
+      </div>
+    </div>
 
     <div class="grid-cell width-quarter position-three-quarters">
+      <tal:banners tal:replace="structure provider:ploneorg.carousel" />
       <div id="accordion">
         <h2 class="current">Baixe o Plone</h2>
         <div class="pane" style="display:block">
@@ -365,7 +351,9 @@
         </div>
 
       </div> <!-- End accordion -->
-    </div> <!-- End cell -->
+
+    </div>
+
   </div> <!-- End row -->
 
   <div class="visualClear"><!-- --></div>

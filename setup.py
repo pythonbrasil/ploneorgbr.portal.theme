@@ -17,10 +17,10 @@ setup(name='ploneorgbr.portal.theme',
         "Programming Language :: Python",
         "Topic :: Software Development :: Libraries :: Python Modules",
         ],
-      keywords='web zope plone theme skin simples_consultoria',
-      author='Simples Consultoria',
-      author_email='products@simplesconsultoria.com.br',
-      url='http://www.simplesconsultoria.com.br/',
+      keywords='web zope plone theme skin',
+      author='Comunidade Plone.org.br',
+      author_email='contato@plone.org.br',
+      url='http://www.plone.org.br/',
       license='GPL',
       packages=find_packages(exclude=['ez_setup']),
       namespace_packages=['ploneorgbr', 'ploneorgbr.portal'],
@@ -29,7 +29,6 @@ setup(name='ploneorgbr.portal.theme',
       install_requires=[
           'setuptools',
           'plone.app.theming'
-          # -*- Extra requirements: -*-
       ],
       entry_points="""
       # -*- Entry points: -*-
@@ -38,4 +37,3 @@ setup(name='ploneorgbr.portal.theme',
       target = plone
       """,
       )
-
