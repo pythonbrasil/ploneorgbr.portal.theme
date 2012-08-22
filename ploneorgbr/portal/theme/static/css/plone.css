@@ -161,14 +161,18 @@ html, body {
     height: 100%;
 }
 
-body{
-    background: url(../images/bg/bgheader.jpg) repeat-x top left;
+body {
+    background: url(../images/bg/bgheader.jpg) repeat-x left 24px;
 }
 
-#bgrep{
+#bgrep {
     background: url(../images/bg/bgheader2.jpg) repeat-x top left;
     height: 50px;
     margin-left: 60%;
+}
+
+#slimbar .navbar-inner {
+    background-color: #3F92C2;
 }
 
 #outer-wrapper {
