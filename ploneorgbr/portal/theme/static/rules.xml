@@ -11,49 +11,59 @@
   <rules css:if-content="#visual-portal-wrapper">
 
     <!-- META TAGS -->
-    <drop theme="/html/head/meta" />
-    <after content="/html/head/meta" theme-children="/html/head" />
+    <drop css:theme="meta" />
+    <after css:content="meta" css:theme-children="head" />
 
     <!-- TITLE -->
-    <replace content="/html/head/title" theme="/html/head/title" />
+    <replace css:content="title" css:theme="title" />
 
     <!-- Copy style, script and link tags in the order they appear in the content -->
     <after
-        content="/html/head/style | /html/head/script | /html/head/link"
-        theme-children="/html/head"
+        css:content="head > style, head > script, head > link"
+        css:theme-children="head"
         />
 
-    <drop theme="/html/head/style" />
-    <drop theme="/html/head/script" />
-    <drop theme="/html/head/link" />
+    <drop css:theme="head > style, head > script, head > link" />
 
     <!-- Copy over the id/class attributes on the body tag.
          This is important for per-section styling -->
     <merge attributes="class" css:content="body" css:theme="body" />
     <copy attributes="id dir" css:content="body" css:theme="body" />
 
+    <!-- SLIMBAR -->
+    <before css:content="#slimbar" css:theme="#bgrep" />
+
     <!-- LOGO -->
-    <replace css:content='#portal-logo' css:theme="#portal-logo" />
+    <replace css:content="#portal-logo" css:theme="#portal-logo" />
 
     <!-- SITE ACTIONS -->
     <!--replace css:content="#portal-siteactions li" css:theme-children="#portal-siteactions li" /-->
 
     <!-- SEARCHBOX -->
     <drop css:content="input.searchButton" />
-    <replace css:content-children='#portal-searchbox' css:theme-children='#portal-searchbox' />
+    <replace
+        css:content-children="#portal-searchbox"
+        css:theme-children="#portal-searchbox"
+        />
 
     <!-- GLOBALNAV -->
-    <replace css:content='#portal-globalnav li' css:theme-children='#main-nav' />
+    <replace
+        css:content="#portal-globalnav li"
+        css:theme-children="#main-nav"
+        />
 
     <!-- LOGGED-IN SLIDER -->
     <replace
-        css:if-content='#user-name'
-        css:content='#portal-personaltools'
-        css:theme-children='#user'
+        css:if-content="#user-name"
+        css:content="#portal-personaltools"
+        css:theme-children="#user"
         />
 
     <!-- BREADCRUMBS -->
-    <replace css:content='#portal-breadcrumbs' css:theme='#breadcrumbs' />
+    <replace
+        css:content="#portal-breadcrumbs"
+        css:theme="#breadcrumbs"
+        />
 
     <!-- BANNER -->
     <replace
@@ -67,11 +77,14 @@
     <replace css:content="#content" css:theme="#content" />
 
     <!-- COLUMNS -->
-    <!--replace css:content-children="#portal-column-one > *" css:theme="#column-one" /-->
-    <before
+    <replace
+        css:content-children="#portal-column-one > *"
+        css:theme-children="#content > .grid-row > .grid-cell.position-three-quarters"
+        />
+    <!--before
         css:content-children="#portal-column-two > *"
         css:theme="#content > div:nth-child(2) .width-quarter"
-        />
+        /-->
 
     <!-- DOORMAT -->
     <before
