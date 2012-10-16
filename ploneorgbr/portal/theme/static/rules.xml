@@ -7,6 +7,9 @@
   <!-- The default theme, used for standard Plone web pages -->
   <theme href="index.html" css:if-content="#visual-portal-wrapper" />
 
+  <!-- HEAD -->
+  <replace css:content="head base" css:theme="head base" />
+
   <!-- Rules applying to a standard Plone web page -->
   <rules css:if-content="#visual-portal-wrapper">
 
